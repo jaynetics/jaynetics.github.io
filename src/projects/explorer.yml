@@ -1,0 +1,4 @@
+name: Volunteering Explorer
+desc: This is a map browser like the one you know from AirBnB, but it shows volunteering opportunities instead of holiday homes. It's built on React, Google Maps, and the betterplace API.
+link: https://www.zusammen-fuer-fluechtlinge.de/volunteering/map?south=52.48373776404566&west=13.363861018190391&north=52.561133327771905&east=13.49947350598336
+rank: 50

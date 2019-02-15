@@ -1,0 +1,4 @@
+name: NWCMS
+desc: 'This bigly named project is a prototype of a headless CMS with fully dynamic data modelling. It could be compared to Contentful in terms of scope, but runs as a simple Rails Engine. Credentials: demo@nwcms.com // 123456'
+link: https://nwcms.herokuapp.com
+rank: 100
