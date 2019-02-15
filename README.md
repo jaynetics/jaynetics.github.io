@@ -1,1 +1,0 @@
-# jaynetics.github.io
