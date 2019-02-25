@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import tw from "tailwind.macro"
 import styled from "styled-components"
 import { Divider } from "./dividers"
 import ParallaxContent from "./parallax_content"

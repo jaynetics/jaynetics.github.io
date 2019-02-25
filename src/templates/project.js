@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 import Footer from "../components/Footer"
 import HeroBackground from "../components/backgrounds/hero_background"
 import styled from "styled-components"
-import tw from "tailwind.macro"
 import { ProjectImage } from "../components/project_images"
 
 import { ReactComponent as ExternalLinkSVG } from "../images/external_link.svg"
@@ -12,7 +11,7 @@ import { ReactComponent as ExternalLinkSVG } from "../images/external_link.svg"
 export default ({ data: { projectsYaml: project } }) => (
   <Layout parallaxPages={1}>
     <HeroBackground offset={0}>
-      <Wrapper>
+      <Container>
         <ImageContainer>
           <ProjectImage link={project.fields.path} />
         </ImageContainer>
@@ -21,7 +20,7 @@ export default ({ data: { projectsYaml: project } }) => (
           <LinkButton />
         </a>
         <Description>{project.desc}</Description>
-      </Wrapper>
+      </Container>
       <Footer />
     </HeroBackground>
   </Layout>
@@ -41,18 +40,25 @@ export const query = graphql`
   }
 `
 
-const Wrapper = styled.div`
+const Container = styled.div`
   ${tw`w-full xl:w-2/3`};
-  max-height: calc(100vh - 100px);
+  align-self: flex-start;
+  max-height: calc(100vh - 120px);
   overflow: scroll;
+  -ms-overflow-style: none; // ie
+  scrollbar-width: none; // firefox 65+
+  &::-webkit-scrollbar { // chrome etc.
+    display: none;
+  };
+}
 `
 
 const Name = styled.h1`
-  ${tw`text-2xl font-serif text-white mb-0 tracking-wide relative inline-block`};
+  ${tw`text-lg md:text-2xl font-serif text-white mb-0 tracking-wide relative inline-block`};
 `
 
 const Description = styled.p`
-  ${tw`text-grey-light text-lg font-sans text-justify`};
+  ${tw`text-grey-light text-sm md:text-md lg:text-lg font-sans text-justify`};
 `
 
 const LinkButton = styled(ExternalLinkSVG)`

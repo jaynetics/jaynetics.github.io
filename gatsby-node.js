@@ -1,17 +1,27 @@
-const {createFilePath} = require(`gatsby-source-filesystem`);
-const pathHelper = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`)
+const pathHelper = require(`path`)
 
-exports.onCreateNode = ({node, getNode, actions}) => {
+exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
+  setBabelPlugin({
+    name: "babel-plugin-tailwind-components",
+    options: {
+      config: "./tailwind.js",
+      format: "auto",
+    },
+  })
+}
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
   if (/Yaml/.test(node.internal.type)) {
     actions.createNodeField({
       node,
       name: `path`,
-      value: createFilePath({node, getNode, trailingSlash: false})
-    });
+      value: createFilePath({ node, getNode, trailingSlash: false }),
+    })
   }
-};
+}
 
-exports.createPages = ({graphql, actions}) => {
+exports.createPages = ({ graphql, actions }) => {
   return graphql(`
     {
       allProjectsYaml {
@@ -25,11 +35,11 @@ exports.createPages = ({graphql, actions}) => {
       }
     }
   `).then(result => {
-    result.data.allProjectsYaml.edges.forEach(({node}) => {
+    result.data.allProjectsYaml.edges.forEach(({ node }) => {
       actions.createPage({
         path: node.fields.path,
-        component: pathHelper.resolve(`./src/templates/project.js`)
-      });
-    });
-  });
-};
+        component: pathHelper.resolve(`./src/templates/project.js`),
+      })
+    })
+  })
+}

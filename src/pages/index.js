@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import tw from "tailwind.macro"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"

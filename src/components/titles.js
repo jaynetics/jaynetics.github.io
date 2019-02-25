@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import tw from "tailwind.macro"
 
 export const Title = styled.h1`
   ${tw`text-4xl font-serif text-white mb-8 tracking-wide relative inline-block`};

@@ -31,7 +31,7 @@ const ImageForLink = ({ link, type }) => (
                 thumb: fluid(maxWidth: 592, maxHeight: 273) {
                   ...GatsbyImageSharpFluid
                 }
-                large: fluid(maxWidth: 1000, maxHeight: 460) {
+                large: fluid(maxWidth: 1000, maxHeight: 460, quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
