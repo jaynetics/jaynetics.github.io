@@ -44,7 +44,7 @@ const Index = ({ data }) => (
         <ContactWrapper>
           <Avatar src={avatarURL} alt="Janosch Müller" />
           <ContactSub>
-            Say <a href="mailto:j.m.gnoerg@dfgh.net">hi!</a>
+            Say <a href="mailto:hi@janosch.online">hi!</a>
           </ContactSub>
         </ContactWrapper>
       </WidthLimiterXxl>
