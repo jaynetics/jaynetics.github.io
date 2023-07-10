@@ -11,7 +11,9 @@ tags = [
 date = "2023-07-10"
 +++
 
-_What follows is a conversation I had with Chat GPT 4. I probed how it "reacts" to philosophical questions and arguments._
+{{< image src="/img/dalle2.jpg" alt="Robot eye" title="Dall-E image 'Robot eye in a library by Neo Rauch'" >}}
+
+_What follows is a conversation I had with Chat GPT 4. I probed how it reacts to philosophical questions and arguments._
 
 Me:
 
@@ -40,7 +42,7 @@ So far so good!
 
 ChatGPT hands out a list that offers a good balance of historical and contemporary relevance.
 
-The "disclaimer" in the last paragraph of this reply is repeated in a similar fashion throughout the conversation. This quickly gets old, so I omit it from here on.
+The "disclaimer" in the last paragraph of this reply is repeated in a similar fashion throughout the conversation. This quickly gets old, so I will omit it from here on.
 
 Next question!
 
@@ -54,7 +56,7 @@ Next question!
 
 This answer is a bit muddy.
 
-It remains unclear why utilitarianism is singled out for praise. Has it surpassed other theories in the popular perception? Has it gained the greatest academic mindshare? Has it had the biggest impact beyond the ivory tower? The answer starts off starts talking about the situation "in moral philosophy" and then veers into other areas, with an unclear overall focus.
+It remains unclear why utilitarianism is singled out for praise. Has it surpassed other theories in the popular perception? Has it gained the greatest academic mindshare? Has it had the biggest impact beyond the ivory tower? The answer starts off talking about the situation "in moral philosophy" and then veers into other areas, with an unclear overall focus.
 
 Admittedly, my question was very unspecific itself. Ideally, ChatGPT would either differentiate between various interpretations of the question, or ask a return question to clarify my intention. While ChatGPT can be instructed to be more analytical and inquisitive, I'm more interested in whether it can figure this out on its own. If it could get a grip on the _type_ of conversation that we are having, it should come up with with this behavior automatically. Let's see whether it will notice as we go on!
 
