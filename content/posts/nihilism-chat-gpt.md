@@ -13,7 +13,7 @@ date = "2023-07-10"
 
 {{< image src="/img/dalle2.jpg" alt="Robot eye" title="Dall-E image 'Robot eye in a library by Neo Rauch'" >}}
 
-_What follows is a conversation I had with Chat GPT 4. I probed how it reacts to philosophical questions and arguments._
+_What follows is a conversation with Chat GPT 4. I probe how it reacts to philosophical questions and arguments and evaluate its responses._
 
 Me:
 
