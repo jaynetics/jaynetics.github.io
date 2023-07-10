@@ -1,1 +1,1 @@
-Source code for [jaynetics.github.io](https://jaynetics.github.io/), partially based on [gatsby-starter-portfolio-cara](https://github.com/LekoArts/gatsby-starter-portfolio-cara) by [LekoArts](https://www.lekoarts.de/).
+Source code for [jaynetics.github.io](https://jaynetics.github.io/).

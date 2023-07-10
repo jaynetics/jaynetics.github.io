@@ -1,0 +1,9 @@
+{{- with .Site.Params.about.social }}
+<div style="padding-top: 2rem">
+  {{ range . -}}
+  <a href="{{ .url }}" target="_blank" rel="me noopener {{ .rel }}" title="{{ .name | humanize }}"
+    style="margin-right: 2rem">{{ partial
+    "svg.html" . }}</a>
+  {{- end -}}
+</div>
+{{- end }}

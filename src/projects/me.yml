@@ -1,4 +1,0 @@
-name: betterplace.me
-desc: betterplace.me is a crowdfunding platform in the same vein as GoFundMe. Payment options include PayPal and Stripe. It is based on a GraphQL backend, with an Apollo client and a lazy-loading SemanticUI interface.
-link: https://www.betterplace.me
-rank: 10
