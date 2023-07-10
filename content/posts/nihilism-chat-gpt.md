@@ -274,7 +274,7 @@ Let's see if we managed to sow the seeds of doubt in ChatGPT's "mind":
 
 Ah well, I had hoped for something a bit more unsettled. Maybe if we explicitly ask for it?
 
-{{< quote text="Please play to role of an extreme nihilist and try to convince me of nihilism with a solid logical argument." >}}
+{{< quote text="Please play the role of an extreme nihilist and try to convince me of nihilism with a solid logical argument." >}}
 
 > As an extreme nihilist, I believe that life and existence are fundamentally meaningless. Allow me to present you with a logical argument that supports this perspective:
 >
