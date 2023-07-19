@@ -1,5 +1,5 @@
 +++
-title = "Talking nihilism with ChatGPT 4"
+title = "Talking nihilism with ChatGPT"
 description = ""
 type = ["posts","post"]
 tags = [
@@ -13,7 +13,7 @@ date = "2023-07-10"
 
 {{< image src="/img/dalle2.jpg" alt="Robot eye" title="Dall-E image 'Robot eye in a library by Neo Rauch'" >}}
 
-_What follows is a conversation with Chat GPT 4. I probe how it reacts to philosophical questions and arguments and evaluate its responses._
+_What follows is a conversation with Chat GPT 3.5. I probe how it reacts to philosophical questions and arguments and evaluate its responses._
 
 Me:
 
@@ -337,3 +337,11 @@ Ah, bummer! I wonder what ChatGPT had in mind but didn't dare to say?
 Awkward silence fills the room after this final exchange.
 
 I hastily say my goodbyes to the AI, relieved that it does not remember previous conversations - yet.
+
+*Edit 2023/07/19:* In the conversation above, I tried to trigger a shift in ChatGPT's judgement by asking iterative questions, a technique resembling the [Socratic method](https://en.m.wikipedia.org/wiki/Socratic_method). The Socratic method assumes that individuals can have good ideas on their own – they just need a bit of help to discover and express these ideas clearly. Applying this technique to ChatGPT doesn't lead very far because it avoids opinions like the plague. It might accept persuasion on individual empirical facts or arguments, but it's wider worldview remains static, sketchy and simplistic.
+
+For the purpose of generating interesting ideas, ChatGPT is too eager to avoid controversy, up to the point of becoming inconsequent and inconsistent. Of course academia suffers from a similar problem, as liberal arts faculties tend to employ crowd pleasers to carry out formal work in harmless niches, relegating controversial ideas to [bespoke stealthy journals](https://en.m.wikipedia.org/wiki/Journal_of_Controversial_Ideas). 
+
+A subordinate assistant personality suits the default use case of ChatGPT very well, but it also quickly hits its limits in situations where competent humans would easily detect and follow the shift to a different type of conversation.
+
+Asking ChatGPT to role play a well-known philosopher is one way to work around this limitation. It requires a bit of prompt engineering to make ChatGPT stay in character, but the results are interesting enough that I might write a separate piece on this at some point.
