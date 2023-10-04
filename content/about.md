@@ -18,7 +18,7 @@ Some fun facts about me:
 
 ### Privacy
 
-This site uses no cookies, trackers, or third-party CDNs.
+This site uses no trackers.
 
 ### Legals / Imprint
 
