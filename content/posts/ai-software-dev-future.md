@@ -119,7 +119,7 @@ Another thing that all of the above scenarios have in common is that they are al
 
 Some might say that automation does not always eliminate jobs and that more productivity simply allows a market to produce more goods. However, when I look through the job adverts today, I already see a lot of software companies with dubious value propositions. I'm not sure we need the ability to launch even more software. I don't think the golden age of our profession is over quite yet, but its dawn might be setting in ever so slowly.
 
-When exactly to expect changes is of course the million dollar question. Maybe AI investment enters an early boom-bust cycle and the integration of AI interfaces is delayed to avoid appearing out of sync. Maybe the jump from a low-code B2B offer to a more universal solution is too big to undertake for now? Even if high-level language comes alive on top of a frozen stack, maybe a chaotically evolving stack can still beat it in some relevant way, for some time?
+When exactly to expect changes is of course the million dollar question. Maybe AI investment enters an early boom-bust cycle and the integration of AI interfaces is delayed to avoid appearing out of sync. Maybe the jump from a low-code B2B offer to a more universal solution is too big to undertake for now? Even if a high-level language comes alive on top of a frozen stack, maybe a chaotically evolving stack can still beat it in some relevant way, for some time?
 
 Is anyone going to invest the huge amount of time and money needed to rebuild software development from the ground up in an AI-friendly way? Or will it happen through incremental evolution and take so long that we should not waste too much thought on it?
 
