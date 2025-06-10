@@ -12,7 +12,7 @@ In any case, these dreams stand out to me, and the visuals are often the most in
 
 In some cases, I've documented these rare dreams with a few sentences. To my surprise, it turned out that just a short summary is enough to restore the imagery in my mind much later – even years later. After waiting long enough, the impression is quite akin to a memory, just more absurd.
 
-I've also thought about trying to make sketches of these dreams, but it always seemed to be too much work. Could I do it with AI instead? It's been a while since I [gave image generation models a bigger test run](./feeding-song-lyrics-into-dall-e-3-midjourney-and-stable-diffusion/). So I decided to do another tour, trying to make them generate images that are as close to what I have in mind as possible.
+I've also thought about trying to make sketches of these dreams, but it always seemed to be too much work. Could I do it with AI instead? It's been a while since I [gave image generation models a bigger test run](/posts/2023/feeding-song-lyrics-into-dall-e-3-midjourney-and-stable-diffusion/). So I decided to do another tour, trying to make them generate images that are as close to what I have in mind as possible.
 
 ## Dream about an adventure
 
