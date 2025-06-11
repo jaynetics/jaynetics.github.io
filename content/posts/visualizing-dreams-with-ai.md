@@ -6,13 +6,15 @@ tags = []
 date = "2025-06-10"
 +++
 
-About once a year or so I have an unusually vivid dream. Are these dreams actually different from other dreams? Or do I just wake up at an unusual moment?
+About once a year or so I have an unusually vivid dream. Do these dreams actually differ from other dreams? Or do I just wake up at an unusual moment?
 
-In any case, these dreams stand out to me, and the visuals are often the most interesting bit. Everything appears crystal clear and detailed as I dream, and after getting up, the imagery is still very present in my mind.
+In any case, these are dreams that stand out to me, and the visuals are often the most interesting bit. Everything appears crystal clear and detailed as I dream, and after getting up, the imagery stays very present in my mind for a while.
 
-In some cases, I've documented these rare dreams with a few sentences. To my surprise, it turned out that just a short summary is enough to restore the imagery in my mind much later – even years later. After waiting long enough, the impression is quite akin to a memory, just more absurd.
+In some cases, I've documented these rare dreams with a few sentences. To my surprise, it turned out that just a short summary is enough to restore the imagery in my mind later – in some cases even years later. After waiting long enough, the impression is quite akin to a memory, just more outlandish.
 
-I've also thought about trying to make sketches of these dreams, but it always seemed to be too much work. Could I do it with AI instead? It's been a while since I [gave image generation models a bigger test run](/posts/2023/feeding-song-lyrics-into-dall-e-3-midjourney-and-stable-diffusion/). So I decided to do another tour, trying to make them generate images that are as close to what I have in mind as possible.
+I've sometimes considered making sketches of these dreams, but it always seemed too cumbersome. Could I do it with AI instead? It's been a while since I [took image generation models on a test run](/posts/2023/feeding-song-lyrics-into-dall-e-3-midjourney-and-stable-diffusion/). So I decided to do another tour, trying to make them generate images that are as close to what I have in mind as possible.
+
+These are the results.
 
 ## Dream about an adventure
 
@@ -22,7 +24,7 @@ I've also thought about trying to make sketches of these dreams, but it always s
 
 ### Background
 
-This dream was probably inspired by a re-read of Lord of the Rings. I tried different prompts to get the metallic blob to look ever so slightly anthropomorphic, just as it was in my dream, but that would always mess up other parts of the image.
+This dream was probably inspired by a re-read of Lord of the Rings. (At a later point in my life, it might also have been dubbed "a visit at the in-laws".) I tried different prompts to get the metallic blob to look ever so slightly anthropomorphic, just as it was in my dream, but that would always mess up other parts of the image.
 
 ### Result
 
@@ -32,11 +34,11 @@ This dream was probably inspired by a re-read of Lord of the Rings. I tried diff
 
 ### Prompt
 
-> An Asian woman sitting on a plain green bench without backrest. She is wearing rings with very large and colorful gemstones on her hands. Opposite of her, lying flatly on his back on another similar bench, a man is being crushed by a black box. The man holds a cornet with strawberry ice cream in his dangling hand.
+> An Asian woman sitting on a plain green bench without a backrest. She is wearing rings with very large and colorful gemstones on her hands. Opposite of her, lying flatly on his back on another similar bench, a man is being crushed by a black box. The man holds a cornet with strawberry ice cream in his dangling hand.
 
 ### Background
 
-This dream was about a girl who preferred another guy over me. They didn't end up exchanging rings tho. Ha-Ha!
+This dream was inspired by a girl who preferred another guy over me. They didn't end up exchanging rings, though, and instead split up after a year or so. Ha-Ha!
 
 ### Result
 
@@ -50,8 +52,7 @@ This dream was about a girl who preferred another guy over me. They didn't end u
 
 ### Background
 
-I used to have this or similar dreams for years after I finished school. In many of these cases, I "realized" during the dream that I missed something important at school, and thus my higher education degrees would also be invalidated! I'd have to go back to
-school to re-do the final school years, and somehow also juggle this task with my job and family life. Hence the facial expression in the image is hardly exaggerated ...
+I used to have this or similar dreams for years after I finished school. In many of these cases, I "realized" during the dream that I had missed something important at school, and thus my college diplomas would also be invalidated! I'd have to go back to school to re-do the final school years, and somehow also juggle this task with my job and family life. Hence the facial expression in the image is hardly exaggerated ...
 
 ### Result
 
@@ -79,7 +80,7 @@ Admittedly, this dream isn't that outlandish. Some whacko giving inappropriate f
 
 ### Background
 
-I had a high fever when I had this dream. The dream stood out for being quite synaesthetic and also including some very specific music. I tried to recreate that music in Fruity Loops at the time, but it took me too long and the sounds slipped through my fingers. If I ever have such a dream again, I'll try using something like [Suno](suno.com).
+I had a high fever when I dreamt this. The dream stood out for being quite synaesthetic and also including some very specific music, full of intense rhythms and suspenseful melodies. I tried to recreate that music in Fruity Loops the next morning, but the sounds evaporated from my memory more quickly than I could recreate them. If I ever have such a dream again, I'll try using something like [Suno](suno.com) for a quick shot.
 
 ### Result
 
@@ -89,11 +90,11 @@ I had a high fever when I had this dream. The dream stood out for being quite sy
 
 ### Prompt
 
-> A long barren coastline of Crete, with steep cliffs and several white-washed, high-rising monasteries, and very high arches dispersed across it.
+> A long barren coastline of Crete, with steep cliffs and several white-washed, high-rising monasteries and several very high arches dispersed across it.
 
 ### Background
 
-I've been to Crete a few times as a kid. There were more and taller arches in the dream, but any changes I made to the prompt made other bits worse, so I left it at this.
+I've visited Crete a few times as a kid. There were more and taller arches in the dream, like in a photo-realistic version of a de Chirico painting. However, any changes I made to the prompt made other bits worse, e.g. the coastline would turn less Cretan, so I left it at this.
 
 ### Result
 
@@ -107,7 +108,7 @@ I've been to Crete a few times as a kid. There were more and taller arches in th
 
 ### Background
 
-I was probably processing the drug addicts of Berlin's streets in this one. (While this dream had a nightmarish touch, it's worth noting that the increase in foil smoking in recent years is arguably a good trend, as it is a lot less harmful to the addicts than syringes.)
+I was probably processing my regular encounters with drug addicts on Berlin's streets in this one. (And while this dream had a nightmarish touch, it's worth noting that the increase in foil smoking in recent years is arguably a good trend, as it is a lot less harmful to the addicts than syringes.)
 
 ### Result
 
@@ -121,7 +122,7 @@ I was probably processing the drug addicts of Berlin's streets in this one. (Whi
 
 ### Background
 
-This dream was unusual in that I honestly had to chuckle when I woke up. There were gummy bears at the party the night before I dreamt this, which explains part of it. Where that Vader guy came from, I don't really have a clue.
+This dream was unusual in that I honestly had to chuckle when I woke up. There were gummy bears at the party the night before. Not sure where that Vader guy came from. Probably just existential dread or something.
 
 ### Result
 
@@ -129,8 +130,10 @@ This dream was unusual in that I honestly had to chuckle when I woke up. There w
 
 ## Conclusion
 
-Do some of these look like what I saw in my dreams? Yes, somewhat! A few come quite close, which made it ever the more frustrating that I couldn't get the final 20% right. As you may have guessed, all these prompts went through a few iterations, and I tried each of them in three models. Yet in all of the cases, I hit a brick wall at some point.
+Do some of these images look like what I saw in my dreams? Yes – somewhat! A few come quite close, which made it ever the more frustrating that I could never get the final 20% right. As you may have guessed, all these prompts went through a few iterations, and I tried each of them in two or three models. Yet in all of the cases, I hit a brick wall at some point.
 
-I'm not saying this is the model's fault. Well, okay, in some cases it is. E.g., for the dream with the two green benches, I couldn't get the benches to stand opposite of each other and still preserve other aspects of the image, no matter which way I described it. It would have been way easier to explain this to a human artist. I'd probably just use my hands to demonstrate the spatial arrangement. Of course, in some cases, there might be a limit to gestures and language: Just because a highly specific image exists in someone's head, that doesn't mean there is an exact and unambiguous way to get it out of there. We're not pixel enumerators, after all, and I guess that's exactly why we can have all these multi-layered, absurd yet pretty experiences.
+I'm not saying this is the model's fault. Well, okay, in some cases it is. E.g., for the dream with the two green benches, I couldn't get the benches to stand opposite of each other and still preserve other aspects of the image, no matter which way I described it, and this doesn't sound like a very challenging requirement at face value. It would have been a lot easier to explain this to a human artist. I'd probably just use my hands to demonstrate the spatial arrangement.
 
-If I wanted these images to get really close to the "originals", I'd have to whip out photoshop and at the very least stitch together multiple generated images. So at this point, I'm not sure using AI beats sketching for this purpose. Sketching would probably win at authenticity, though of course generated images look nicer. Another thing I might try at some point is first making a sketch, and then augmenting it with AI. Or, you know, just [read out the images directly from the brain](https://www.science.org/content/article/ai-re-creates-what-people-see-reading-their-brain-scans).
+I could certainly still get better at prompting, but in some cases, there might be a limit to language, no matter whether the recipient is a human or a machine. Just because a highly specific image exists in someone's head, that doesn't mean there is an exact and unambiguous way to get it out of there in one go, without iterating on intermediate results. We're not pixel enumerators, after all, and I guess that's exactly why we can have such rich, multi-layered, absurd, yet often pretty experiences.
+
+If I wanted these images to really approximate the "originals", I'd either have to whip out photoshop and at the very least stitch together multiple generated images, or iterate and rely heavily on [in- and out-painting](https://documentation.deep-image.ai/image-processing/inpainting-and-outpainting-uncrop). So at this point, I'm not sure using AI beats sketching or writing a short description of the visuals for this purpose. Sketching probably still has a better balance of speed and authenticity, though of course generated images look nicer. Another thing worth trying might be to first make a sketch, and then augment it with AI. Or, you know, just [reading out the images directly from the brain](https://www.science.org/content/article/ai-re-creates-what-people-see-reading-their-brain-scans).
