@@ -12,7 +12,7 @@ In any case, these are dreams that stand out to me, and the visuals are often th
 
 In some cases, I've documented these rare dreams with a few sentences. To my surprise, it turned out that just a short summary is enough to restore the imagery in my mind later – in some cases even years later. After waiting long enough, the impression resembles any other visual memory, except that it feels a bit more alien.
 
-I've sometimes considered making sketches of these dreams, but it always seemed too cumbersome. Could I do it with AI instead? It's been a while since I [took image generation models on a test run](/posts/2023/feeding-song-lyrics-into-dall-e-3-midjourney-and-stable-diffusion/), so I decided to do another tour. This time I wanted to see if AI would give me a decent approximation of dream visuals without spending a lot of time on prompt engineering.
+I've sometimes considered making sketches of these dreams, but it always seemed too cumbersome. Could AI help me out here? It's been a while since I [took image generation models on a test run](/posts/2023/feeding-song-lyrics-into-dall-e-3-midjourney-and-stable-diffusion/), so I decided to go for another tour. This time I wanted to see if AI would give me a decent approximation of dream visuals without spending a lot of time on prompt engineering.
 
 These are the results.
 
@@ -28,7 +28,7 @@ These are the results.
 
 ### Background
 
-This dream was probably inspired by a re-read of Lord of the Rings. (At a later point in my life, it might also have been dubbed "a visit at the in-laws".) I tried different prompts to get the metallic blob to look ever so slightly anthropomorphic, just as it was in my dream, but that would always mess up other parts of the image.
+This dream was probably inspired by a re-read of Lord of the Rings. (At a later point in my life, it might also have been dubbed "a visit at the in-laws".) I tried different prompts to get the metallic blob to look ever so slightly anthropomorphic, just as it was in my dream, but such instructions would always mess up other parts of the image.
 
 ## Dream about feeling crushed
 
@@ -84,7 +84,7 @@ Admittedly, this dream isn't very outlandish. Some whacko giving inappropriate f
 
 ### Background
 
-I had a high fever when I dreamt this. The dream stood out for being quite synaesthetic and also including some very specific music, full of intense rhythms and suspenseful melodies. I tried to recreate that music in Fruity Loops the next morning, but the sounds evaporated from my memory more quickly than I could recreate them. If I ever have such a musical dream again, I'll try using something like [Suno](suno.com) for a quick shot.
+I had a high fever when I dreamt this. The dream stood out for being quite synaesthetic and also including some very specific music, full of driving rhythms and suspenseful melodies. I tried to recreate that music in Fruity Loops the next morning, but the sounds evaporated from my memory more quickly than I could rig them up. If I ever have such a musical dream again, I'll try using a music generator like [Suno](suno.com) for a quick shot.
 
 ## Dream about Crete
 
@@ -136,4 +136,4 @@ I'm not saying this is the model's fault. Well, okay, in some cases it is. E.g.,
 
 I could certainly still get better at prompting, but in some cases, there might be a limit to language, no matter whether the recipient is a human or a machine. Just because a highly specific image exists in someone's head, that doesn't mean there is an exact and unambiguous way to get it out of there in one go, without iterating on intermediate results. We're not pixel enumerators, after all, and I guess that's exactly why we can have such rich, multi-layered, absurd, yet often pretty experiences.
 
-If I wanted these images to really approximate the "originals", I'd either have to whip out photoshop and at the very least stitch together multiple generated images, or iterate and rely heavily on [in- and out-painting](https://documentation.deep-image.ai/image-processing/inpainting-and-outpainting-uncrop). So at this point, I'm not sure using AI beats sketching or writing a short description of the visuals for this purpose. Sketching probably still has a better balance of speed and authenticity, though of course generated images look nicer. Another thing worth trying might be to first make a sketch, and then augment it with AI. Or, you know, just [reading out the images directly from the brain](https://www.science.org/content/article/ai-re-creates-what-people-see-reading-their-brain-scans).
+If I wanted these images to really approximate the "originals", I'd either have to whip out photoshop and at the very least stitch together multiple generated images, or iterate and rely heavily on [in- and out-painting](https://documentation.deep-image.ai/image-processing/inpainting-and-outpainting-uncrop). So at this point, I'm not sure using AI beats sketching or writing a short summary for the purpose of keeping a hold of dream visuals. Sketching probably still has a better balance of speed and authenticity, though of course generated images look nicer. Another thing worth trying might be to first make a sketch, and then augment it with AI. Or, you know, just [reading out the images directly from the brain](https://www.science.org/content/article/ai-re-creates-what-people-see-reading-their-brain-scans).
