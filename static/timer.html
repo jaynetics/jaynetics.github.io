@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-color, #000000);
+        color: var(--normal-color, #ffffff);
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+      }
+
+      #app {
+        text-align: center;
+        width: 100%;
+      }
+
+      .display {
+        font-size: 30vw;
+        line-height: 1;
+        cursor: default;
+        user-select: none;
+      }
+
+      .display.warning {
+        color: var(--warning-color, #ff0000);
+      }
+
+      .display.blink {
+        animation: blink-animation 0.5s steps(2, start) infinite;
+      }
+
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+
+      .display.flash {
+        animation: flash-animation 0.3s ease-in-out 3;
+      }
+
+      @keyframes flash-animation {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .controls {
+        margin-top: 2vw;
+        display: flex;
+        gap: 1vw;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .controls button {
+        font-family: inherit;
+        font-size: 2.5vw;
+        padding: 0.8vw 2vw;
+        min-width: 9ch;
+        border: 2px solid var(--normal-color, #ffffff);
+        background: transparent;
+        color: var(--normal-color, #ffffff);
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .controls button:hover:not(:disabled) {
+        background: var(--normal-color, #ffffff);
+        color: var(--bg-color, #000000);
+      }
+
+      .controls button:disabled {
+        opacity: 0.3;
+        cursor: default;
+      }
+
+      .settings-btn {
+        position: fixed;
+        top: 1vw;
+        right: 1vw;
+        font-size: 3vw;
+        background: none;
+        border: none;
+        color: var(--normal-color, #ffffff);
+        cursor: pointer;
+        opacity: 0.5;
+        font-family: inherit;
+      }
+
+      .settings-btn:hover:not(:disabled) {
+        opacity: 1;
+      }
+
+      .settings-btn:disabled {
+        opacity: 0.15;
+        cursor: default;
+      }
+
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        overflow-y: auto;
+      }
+
+      .overlay.hidden {
+        display: none;
+      }
+
+      .settings-panel {
+        background: #111;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 400px;
+        width: 90%;
+        font-family: inherit;
+        margin: auto;
+      }
+
+      .settings-panel h2 {
+        margin-bottom: 1rem;
+      }
+
+      .settings-panel label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .settings-panel input {
+        width: 100%;
+        padding: 0.4rem;
+        margin-bottom: 1rem;
+        font-family: inherit;
+        font-size: 1rem;
+        border: 1px solid #444;
+        border-radius: 4px;
+        background: #222;
+        color: #fff;
+      }
+
+      .settings-panel input[type='color'] {
+        height: 2rem;
+        padding: 0.2rem;
+        cursor: pointer;
+      }
+
+      .settings-panel .btn-row {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .settings-panel button {
+        flex: 1;
+        padding: 0.5rem;
+        font-family: inherit;
+        font-size: 1rem;
+        border: 1px solid #444;
+        border-radius: 4px;
+        cursor: pointer;
+        background: #333;
+        color: #fff;
+      }
+
+      .settings-panel button:hover {
+        background: #555;
+      }
+    </style>
+    <script type="module" crossorigin>(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))e(r);new MutationObserver(r=>{for(const i of r)if(i.type==="childList")for(const s of i.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&e(s)}).observe(document,{childList:!0,subtree:!0});function o(r){const i={};return r.integrity&&(i.integrity=r.integrity),r.referrerPolicy&&(i.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?i.credentials="include":r.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function e(r){if(r.ep)return;r.ep=!0;const i=o(r);fetch(r.href,i)}})();const R=[10,20,30],B=120,z=20,q="#ffffff",D="#ff0000",F="#000000",k=5999;class H{constructor(t){this._state="stopped",this._remaining=0,this._intervalId=null,this.callbacks=t}get state(){return this._state}get remaining(){return this._remaining}clamp(t){return Math.min(Math.max(0,t),k)}start(t){if(this._state!=="running"){if(this._state==="paused"){this._state="running",this.startInterval(),this.emitTick();return}this._remaining=this.clamp(t),this._remaining!==0&&(this._state="running",this.startInterval(),this.emitTick())}}pause(){this._state==="running"&&(this._state="paused",this.clearInterval(),this.emitTick())}reset(t){this.clearInterval(),this._state="stopped",this._remaining=this.clamp(t),this.emitTick()}addMinute(){const t=this._state==="finished";this._remaining=Math.min(this._remaining+60,k),t&&(this._state="running",this.startInterval()),this.emitTick()}subtractMinute(){if(this._state!=="finished"){if(this._remaining=Math.max(this._remaining-60,0),this._remaining===0&&this._state==="running"){this.finish();return}this.emitTick()}}dispose(){this.clearInterval()}startInterval(){this._intervalId=setInterval(()=>{if(this._remaining--,this._remaining<=0){this._remaining=0,this.finish();return}this.emitTick()},1e3)}finish(){this.clearInterval(),this._state="finished",this.emitTick(),this.callbacks.onFinish()}clearInterval(){this._intervalId!==null&&(clearInterval(this._intervalId),this._intervalId=null)}emitTick(){this.callbacks.onTick({remaining:this._remaining,state:this._state})}}const I="timer-settings";function U(){return{presets:[...R],warningThreshold:B,blinkThreshold:z,normalColor:q,warningColor:D,bgColor:F}}function C(n){return typeof n=="string"&&/^#[0-9a-fA-F]{6}$/.test(n)}function T(n){return typeof n=="number"&&Number.isInteger(n)&&n>0}function $(){const n=U();try{const t=localStorage.getItem(I);if(!t)return n;const o=JSON.parse(t);if(typeof o!="object"||o===null)return n;const e=o;return Array.isArray(e.presets)&&e.presets.every(T)&&(n.presets=e.presets.map(r=>Math.min(r,99))),T(e.warningThreshold)&&(n.warningThreshold=e.warningThreshold),T(e.blinkThreshold)&&(n.blinkThreshold=e.blinkThreshold),C(e.normalColor)&&(n.normalColor=e.normalColor),C(e.warningColor)&&(n.warningColor=e.warningColor),C(e.bgColor)&&(n.bgColor=e.bgColor),n}catch{return n}}function G(n){localStorage.setItem(I,JSON.stringify(n))}let _=null;function W(){return _||(_=new AudioContext),_}function j(){const n=W(),t=[587,740,880,1175,880],o=.12,e=.06,r=.5;function i(){t.forEach((h,u)=>{const f=n.currentTime+u*(o+e),m=n.createOscillator(),g=n.createGain();m.connect(g),g.connect(n.destination),m.frequency.value=h,g.gain.value=.3,m.start(f),m.stop(f+o)})}i();const s=(t.length*(o+e)+r)*1e3,v=setInterval(i,s);return()=>clearInterval(v)}let y=null;async function N(){if(!y)try{y=await navigator.wakeLock.request("screen"),y.addEventListener("release",()=>{y=null})}catch{}}function K(){document.visibilityState==="visible"&&N()}async function J(){document.addEventListener("visibilitychange",K),await N()}function V(n){const t=Math.floor(n/60),o=n%60;return`${String(t).padStart(2,"0")}:${String(o).padStart(2,"0")}`}function X(n){let t=$(),o=t.presets[0]??0;const e=new H({onTick:x,onFinish:O});let r=!1,i=null;const s=document.createElement("div");s.className="display";const v=document.createElement("div");v.className="controls";const h=document.createElement("div");h.className="controls";const u=document.createElement("button");u.textContent="Start";const f=document.createElement("button");f.textContent="Reset";const m=document.createElement("button");m.textContent="+1:00";const g=document.createElement("button");g.textContent="-1:00",v.append(u,f,m,g);const p=document.createElement("button");p.className="settings-btn",p.textContent="⚙",p.setAttribute("aria-label","Settings");const b=document.createElement("div");b.className="overlay hidden";const S=M();b.appendChild(S),e.reset(o*60),n.append(s,h,v,p,b),E(),L(),J(),u.addEventListener("click",()=>{e.state==="running"?e.pause():r?(i==null||i(),i=null,r=!1,e.reset(o*60),s.style.fontSize=""):e.state==="paused"?e.start(0):e.start(e.remaining)}),f.addEventListener("click",()=>{e.reset(o*60),s.style.fontSize="",u.textContent="Start"}),m.addEventListener("click",()=>{r&&(i==null||i(),i=null,r=!1),e.addMinute()}),g.addEventListener("click",()=>{e.subtractMinute()}),window.addEventListener("resize",w),p.addEventListener("click",()=>{b.classList.remove("hidden"),P()});function x(a){s.textContent=V(a.remaining),s.classList.remove("warning","blink","flash");const c=a.state==="running";if(c){if(u.textContent="Pause",a.remaining<=t.blinkThreshold&&s.classList.add("blink"),!s.style.fontSize){const d=s.getBoundingClientRect();d.width>0&&(s.style.fontSize=`${d.height}px`)}}else u.textContent="Start";(c||a.state==="paused")&&a.remaining<=t.warningThreshold&&s.classList.add("warning"),f.disabled=c,p.disabled=c;for(const d of h.querySelectorAll("button"))d.disabled=c}function w(){if(!s.style.fontSize)return;s.style.fontSize="";const a=s.getBoundingClientRect();a.width>0&&(s.style.fontSize=`${a.height}px`)}function O(){r=!0,i=j(),u.textContent="Stop",s.classList.add("blink","warning"),f.disabled=!0,p.disabled=!0;for(const a of h.querySelectorAll("button"))a.disabled=!0}function E(){document.documentElement.style.setProperty("--normal-color",t.normalColor),document.documentElement.style.setProperty("--warning-color",t.warningColor),document.documentElement.style.setProperty("--bg-color",t.bgColor)}function L(){h.innerHTML="",t.presets.forEach(a=>{const c=document.createElement("button");c.textContent=`${a}:00`,c.addEventListener("click",()=>{o=a,e.state!=="running"&&(e.reset(a*60),s.style.fontSize="")}),h.appendChild(c)})}function M(){const a=document.createElement("div");return a.className="settings-panel",a.innerHTML=`
+      <h2>Settings</h2>
+      <label>Presets (minutes, comma-separated)
+        <input type="text" data-field="presets" />
+      </label>
+      <label>Warning threshold (seconds)
+        <input type="number" data-field="warningThreshold" min="1" />
+      </label>
+      <label>Blink threshold (seconds)
+        <input type="number" data-field="blinkThreshold" min="1" />
+      </label>
+      <label>Normal color
+        <input type="color" data-field="normalColor" />
+      </label>
+      <label>Warning color
+        <input type="color" data-field="warningColor" />
+      </label>
+      <label>Background color
+        <input type="color" data-field="bgColor" />
+      </label>
+      <div class="btn-row">
+        <button data-action="save">Save</button>
+        <button data-action="cancel">Cancel</button>
+      </div>
+    `,a.querySelector('[data-action="save"]').addEventListener("click",()=>{A()}),a.querySelector('[data-action="cancel"]').addEventListener("click",()=>{b.classList.add("hidden")}),a}function P(){l("presets").value=t.presets.join(", "),l("warningThreshold").value=String(t.warningThreshold),l("blinkThreshold").value=String(t.blinkThreshold),l("normalColor").value=t.normalColor,l("warningColor").value=t.warningColor,l("bgColor").value=t.bgColor}function A(){const c={presets:l("presets").value.split(",").map(d=>parseInt(d.trim(),10)).filter(d=>Number.isInteger(d)&&d>0).map(d=>Math.min(d,99)),warningThreshold:parseInt(l("warningThreshold").value,10)||t.warningThreshold,blinkThreshold:parseInt(l("blinkThreshold").value,10)||t.blinkThreshold,normalColor:l("normalColor").value,warningColor:l("warningColor").value,bgColor:l("bgColor").value};G(c),t=c,o=t.presets[0]??0,E(),L(),e.state!=="running"&&e.state!=="paused"&&(e.reset(o*60),s.style.fontSize=""),b.classList.add("hidden")}function l(a){return S.querySelector(`[data-field="${a}"]`)}return{dispose(){i==null||i(),e.dispose(),window.removeEventListener("resize",w),n.innerHTML=""}}}X(document.getElementById("app"));</script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
